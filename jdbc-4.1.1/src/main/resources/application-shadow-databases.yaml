@@ -1,0 +1,23 @@
+spring:
+  shardingsphere:
+    datasource:
+      ds:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbcUrl: jdbc:mysql://localhost:3306/demo_ds?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        type: com.zaxxer.hikari.HikariDataSource
+        username: root
+        password: root
+      shadow-ds:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbcUrl: jdbc:mysql://localhost:3306/shadow_demo_ds?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        type: com.zaxxer.hikari.HikariDataSource
+        username: root
+        password: root
+      names: ds,shadow-ds
+    shadow:
+      column: shadow
+      shadow-mappings:
+        ds: shadow-ds
+    props:
+      sql:
+        show: true

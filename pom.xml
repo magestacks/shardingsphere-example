@@ -24,15 +24,18 @@
     </modules>
 
     <properties>
+        <!-- Base -->
         <java.version>1.8</java.version>
         <revision>1.0.0-SNAPSHOT</revision>
 
-        <!-- 工具 -->
+        <!-- Tool -->
         <lombok.version>1.18.8</lombok.version>
 
-        <!-- 框架 -->
-        <mybatis-plus.version>3.4.2</mybatis-plus.version>
+        <!-- Framework -->
+        <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
         <sharding-jdbc.version>4.1.1</sharding-jdbc.version>
+        <hikari-cp.version>3.4.2</hikari-cp.version>
+        <mysql-connector-java.version>8.0.21</mysql-connector-java.version>
     </properties>
 
     <dependencies>
@@ -58,15 +61,34 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis-plus.version}</version>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot-starter.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
                 <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
                 <version>${sharding-jdbc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.acmenlt.shardingsphere.examples</groupId>
+                <artifactId>core</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${hikari-cp.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
