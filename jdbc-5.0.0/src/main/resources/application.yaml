@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: shadow-databases
+mybatis:
+  mapper-locations: classpath:META-INF.mappers/*.xml
+

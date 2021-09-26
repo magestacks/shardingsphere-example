@@ -21,6 +21,7 @@
     <modules>
         <module>core</module>
         <module>jdbc-4.1.1</module>
+        <module>jdbc-5.0.0</module>
     </modules>
 
     <properties>
@@ -33,7 +34,8 @@
 
         <!-- Framework -->
         <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
-        <sharding-jdbc.version>4.1.1</sharding-jdbc.version>
+        <shardingsphere4-jdbc.version>4.1.1</shardingsphere4-jdbc.version>
+        <shardingsphere5-jdbc.version>5.0.0-beta</shardingsphere5-jdbc.version>
         <hikari-cp.version>3.4.2</hikari-cp.version>
         <mysql-connector-java.version>8.0.21</mysql-connector-java.version>
     </properties>
@@ -69,7 +71,13 @@
             <dependency>
                 <groupId>org.apache.shardingsphere</groupId>
                 <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-                <version>${sharding-jdbc.version}</version>
+                <version>${shardingsphere4-jdbc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core-spring-boot-starter</artifactId>
+                <version>${shardingsphere5-jdbc.version}</version>
             </dependency>
 
             <dependency>
