@@ -1,4 +1,4 @@
-package cn.acmenlt.shardingsphere.examples.jdbc.base;
+package cn.acmenlt.shardingsphere.examples.jdbc4.base;
 
 import org.springframework.boot.test.context.SpringBootTest;
 

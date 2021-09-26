@@ -1,4 +1,4 @@
-package cn.acmenlt.shardingsphere.examples.jdbc;
+package cn.acmenlt.shardingsphere.examples.jdbc4;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
