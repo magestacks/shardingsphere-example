@@ -35,7 +35,7 @@
         <!-- Framework -->
         <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
         <shardingsphere4-jdbc.version>4.1.1</shardingsphere4-jdbc.version>
-        <shardingsphere5-jdbc.version>5.0.0-beta</shardingsphere5-jdbc.version>
+        <shardingsphere5-jdbc.version>5.1.0</shardingsphere5-jdbc.version>
         <hikari-cp.version>3.4.2</hikari-cp.version>
         <mysql-connector-java.version>8.0.21</mysql-connector-java.version>
     </properties>

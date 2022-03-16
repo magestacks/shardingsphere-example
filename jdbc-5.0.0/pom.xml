@@ -15,7 +15,8 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>jdbc-shadow-5.0.0</module>
+        <module>jdbc-shadow</module>
+        <module>jdbc-readwrite-splitting</module>
     </modules>
 
     <properties>
