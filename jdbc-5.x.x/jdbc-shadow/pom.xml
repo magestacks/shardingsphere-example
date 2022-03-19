@@ -4,11 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>cn.acmenlt.shardingsphere.examples</groupId>
-        <artifactId>jdbc-5.0.0</artifactId>
+        <artifactId>jdbc-5.x.x</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>examples-jdbc5-readwrite-splitting</artifactId>
-    <name>examples-jdbc5-readwrite-splitting</name>
+    <artifactId>jdbc-shadow</artifactId>
+    <name>${project.artifactId}</name>
+
+    <description>ShardingSphere Jdbc5 版本影子库.</description>
 
 </project>

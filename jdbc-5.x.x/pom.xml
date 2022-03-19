@@ -7,7 +7,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>jdbc-5.0.0</artifactId>
+    <artifactId>jdbc-5.x.x</artifactId>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
@@ -35,14 +35,5 @@
             <version>${shardingsphere5-jdbc.version}</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

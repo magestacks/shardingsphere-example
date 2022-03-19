@@ -21,7 +21,7 @@
     <modules>
         <module>core</module>
         <module>jdbc-4.1.1</module>
-        <module>jdbc-5.0.0</module>
+        <module>jdbc-5.x.x</module>
     </modules>
 
     <properties>
@@ -103,11 +103,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
