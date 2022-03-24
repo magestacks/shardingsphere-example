@@ -19,6 +19,7 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
+        <module>before-check</module>
         <module>core</module>
         <module>jdbc-4.1.1</module>
         <module>jdbc-5.x.x</module>
@@ -31,7 +32,9 @@
 
         <!-- Tool -->
         <lombok.version>1.18.8</lombok.version>
-
+        <fastjson.version>1.2.75</fastjson.version>
+        <hutool-all.version>5.7.22</hutool-all.version>
+        
         <!-- Framework -->
         <mybatis-spring-boot-starter.version>2.2.0</mybatis-spring-boot-starter.version>
         <shardingsphere4-jdbc.version>4.1.1</shardingsphere4-jdbc.version>
@@ -90,13 +93,24 @@
                 <groupId>com.zaxxer</groupId>
                 <artifactId>HikariCP</artifactId>
                 <version>${hikari-cp.version}</version>
-                <scope>test</scope>
             </dependency>
 
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java.version}</version>
+            </dependency>
+    
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+    
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
