@@ -20,5 +20,7 @@ public class UserInfo {
     private String userName;
 
     private String pwd;
+    
+    private String over;
 
 }

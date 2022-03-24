@@ -22,11 +22,12 @@
     </update>
 
     <insert id="insert">
-        INSERT INTO t_user (user_id, user_name, pwd, shadow) VALUES (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{shadow,jdbcType=BOOLEAN})
+        /*INSERT INTO t_user (user_id, user_name, pwd, shadow) VALUES (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{shadow,jdbcType=BOOLEAN})*/
+        INSERT INTO t_user (user_id, user_name, pwd) VALUES (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR})
     </insert>
 
     <delete id="delete">
-        DELETE FROM t_user WHERE user_id = #{userId,jdbcType=INTEGER} AND shadow = #{shadow,jdbcType=BOOLEAN};
+        DELETE FROM t_user WHERE user_id = #{userId,jdbcType=INTEGER};
     </delete>
 
     <select id="selectAll" resultMap="baseResultMap">
