@@ -48,6 +48,9 @@ public class BeforeCheckApplication {
     private String driverClassName;
     private final DataSource shardingSphereDataSource;
     
+    /**
+     * Execute before-check.sql under the resource directory file.
+     */
     @SneakyThrows
     @PostConstruct
     public void beforeCheckShardingSphereKeyword() {
